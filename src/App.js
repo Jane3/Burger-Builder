@@ -28,23 +28,23 @@ class App extends Component {
 
   render () {
     let routes = (
-      <HashRouter>
+      <Switch>
         <Route path="/auth" component={asyncAuth} />
         <Route path="/" exact component={BurgerBuilder} />
         <Redirect to="/"/>
-      </HashRouter>
+      </Switch>
     );
 
     if ( this.props.isAuthenticated ) {
       routes = (
-        <HashRouter>
+        <Switch>
           <Route path="/checkout" component={asyncCheckout} />
           <Route path="/orders" component={asyncOrders} />
           <Route path="/logout" component={Logout} />
           <Route path="/auth" component={asyncAuth} />
           <Route path="/" exact component={BurgerBuilder} />
           <Redirect to="/" />
-        </HashRouter>
+        </Switch>
       );
     }
 
