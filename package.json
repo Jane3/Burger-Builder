@@ -2,7 +2,6 @@
   "name": "burger-application",
   "version": "0.1.0",
   "private": true,
-  
   "homepage": "https://Jane3.github.io/burger-builder-web",
   "dependencies": {
     "autoprefixer": "7.1.6",

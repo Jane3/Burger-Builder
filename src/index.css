@@ -2,4 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url("./assets/Images/sandwich.jpg");
+  opacity: 1.0;
+}
+
+body .backimage{
+  opacity: 1.0;
 }
